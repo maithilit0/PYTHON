@@ -1,0 +1,6 @@
+a=int(input("enter amount in rupees: "))
+for notes in [500,200,100,50,20,10,5,2,1]:
+    while a>=notes:
+        print(notes,end=' ')
+        a=a-notes
+    
