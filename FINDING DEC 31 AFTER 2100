@@ -1,0 +1,25 @@
+a=int(input("enter the year : "))
+b=a%400
+c=b//100
+d=b%100
+e=d//4
+f=d-e
+g=((c*5)+ (e*2)+(f))%7
+match g:
+    case 0:
+        print("it is a sunday")
+    case 1:
+        print("it is a monday") 
+    case 2:
+        print("it is a tuesday")
+    case 3:
+        print("it is a wednesday")
+    case 4:
+        print("it is a thursday")  
+    case 5:
+        print("it is a friday") 
+    case 6:
+        print("it is a saturday")
+    case _:
+        print("invalid")    
+
