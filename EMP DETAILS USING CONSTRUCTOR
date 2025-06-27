@@ -1,0 +1,33 @@
+class emp:
+    com="cognizant"
+    tax_percentage=10
+    profit=500000
+    def __init__(self,name,age,salary,share_percentage):
+        self.name=name
+        self.age=age
+        self.salary=salary
+        self.share_percentage=share_percentage
+        self.tax=0 
+        self.share=0 
+
+    def cal_tax(self):
+        self.tax=(self.salary* emp.tax_percentage*0.01)
+    def cal_share(self):
+        self.share=(emp.profit* self.share_percentage*0.01)
+    def display(self):
+        self.cal_tax()
+        self.cal_share()
+        print("name",self.name)
+        print("age",self.age)
+        print("salary",self.salary)
+        print("tax to pay",self.tax)
+        print("share from company",self.share)
+e1=emp("kavi",34,50000,11)
+e2=emp("kav",39,46000,10)
+e3=emp("ram",46,36000,12)
+e1.display()
+print("=====================")
+e2.display()
+print("=====================")
+e3.display()
+print("=====================")
